@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /*#2563eb blue hex, #647687 grey hex*/
+    --background-body: #f4f8f9;
+    --background-div: #dbe6fe;
+    --text-dark: #172a54;
+    --text-light: #ecf1f3; /*Grey hex*/
+    --outline: #1d58d8;
+    --button-background: #6090fa;
+    --button-active-background:#1d58d8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-body);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+p {
+    font-weight: 500;
+}
+
+.container {
+    border: solid 2px var(--outline);
+    border-radius: 3px;
+    background-color: var(--background-div);
+    padding: 10px;
+}
+
+.btn {
+    background-color: var(--button-background);
+    color: var(--text-light);
+    border: solid 1px var(--outline);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--button-active-background);
+}
+
+input {
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    border: 1px solid var(--outline);
+    border-radius: 3px;
+    background-color: var(--background-body);
+    color: var(--text-dark);
+    font-weight: 600;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select {
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    border: 1px solid var(--outline);
+    border-radius: 3px;
+    background-color: var(--button-background);
+    color: var(--text-light);
+    font-weight: 600;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-image: url('C:\Users\dante\OneDrive\JS Projects\exchange-calculator\img\arrow-down-solid.svg'); /*not working */
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 12px auto, 100%;
+    background-repeat: no-repeat;
+}
+
+select:hover {
+    background-color: var(--button-active-background);
+}
+
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--text-dark);
+    padding: 0 10px;
+}
+
+select:focus, input:focus {
+    outline: none;
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 200px;
+    }
+}
