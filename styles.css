@@ -61,7 +61,7 @@ p {
     padding-top: 3px;
     padding-bottom: 3px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .btn:hover {
@@ -97,10 +97,6 @@ select {
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
-    background-image: url('C:\Users\dante\OneDrive\JS Projects\exchange-calculator\img\arrow-down-solid.svg'); /*not working */
-    background-position: right 10px top 50%, 0, 0;
-    background-size: 12px auto, 100%;
-    background-repeat: no-repeat;
 }
 
 select:hover {
@@ -115,8 +111,9 @@ select:hover {
 }
 
 .rate {
+    font-weight: 600;
     color: var(--text-dark);
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 select:focus, input:focus {
